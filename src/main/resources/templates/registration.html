@@ -22,7 +22,7 @@
 		            <h4 align="center" style="color: green">Sign up successful!</h4>
 		            <h5 align="center"> Now log in and rate your fellow humans!</h5>
 		            <br>
-		            <a th:href="@{/login}"><button class= "btn btn-outline-success btn-block">Back to Login Page</button></a> 
+		            <a th:href="@{/index}"><button class= "btn btn-outline-success btn-block">Back to Login Page</button></a> 
 		            <!-- alternatively,  th:if="${#httpServletRequest.getAttribute('success')}" -->
 		        </div>
 		        <div class="container" th:unless="${success}">
@@ -71,7 +71,7 @@
 		            <br>
 		            <br>
 		            <h5 style="text-align:center">Already Registered?</h5>
-		        	<a th:href="@{/login}"><button class= "btn btn-md btn-outline-success btn-block">Log in!</button></a>
+		        	<a th:href="@{/index}"><button class= "btn btn-md btn-outline-success btn-block">Log in!</button></a>
 		        </div>
 			</div>
         </div>

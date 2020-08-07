@@ -46,19 +46,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.
                 authorizeRequests()
                 .antMatchers("/console/**").permitAll()
-                .antMatchers("/login").permitAll()
+                .antMatchers("/index").permitAll()
                 .antMatchers("/signup").permitAll()
                 .antMatchers("/custom.js").permitAll()
                 .antMatchers("/custom.css").permitAll()
                 .antMatchers().hasAuthority("USER").anyRequest()
                 .authenticated().and().csrf().disable().formLogin()
-                .loginPage("/login").failureUrl("/login?error=true")
+                .loginPage("/index").failureUrl("/index?error=true")
                 .defaultSuccessUrl("/profile")
                 .usernameParameter("username")
                 .passwordParameter("password")
                 .and().logout()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                .logoutSuccessUrl("/login").and().exceptionHandling();
+                .logoutSuccessUrl("/index").and().exceptionHandling();
         
         http.headers().frameOptions().disable();
     }
