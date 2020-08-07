@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Profile Page</title>
+<meta name="viewport" content="width=device-width, initiial-scale=1.0">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<style>
+  .profile{
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 960px;
+    margin:auto;
+  }
+  
+  .profile__image{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  }
+  
+  .profile__name{
+    font-size: 3.0em;
+    font-weight: bold;
+  }
+  
+  .profile__title{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .profile__detail{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 0.9em;
+  }
+
+  .profile__star{
+    font-size:18px;
+    color: #FB8C00;
+    margin-bottom: -20px;
+  }
+
+  .profile__star1{
+    font-size:18px;
+    color: #FB8C00;
+    margin-bottom: -20px;
+  }
+
+  .profile__average{
+    font-size: 2.4em;
+    margin-bottom: -20px;
+  }
+
+  .profile__designation{
+    font-size: 1.4em;
+  }
+
+  .profile__rating{
+    margin-bottom: -25px;
+  }
+
+  .profie__detail{
+    font-size: 5.0em;
+  }
+
+  .profile__averagerating{
+    margin-bottom: -25px;
+  }
+
+  /*button*/
+  .button{
+    background-color: #f44336;
+    font-size: 24px;
+  }
+  
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color:  #000000;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  
+  /*table style*/
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+  
+</style>
+
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="#profile">Profile</a>
+  <a href="#tracking">Tracking</a>
+  <a href="#search">Search</a>
+  <a href="#help">Help</a>
+  
+  <input type="text" placeholder="Search..">
+</div>
+<br>
+<br>
+<br>
+  <div class="profile">
+    <div class="profile__name">Oprah Winfrey</div>
+    <div class="profile__title">Montecito, California</div>
+    
+
+    <img src="/Users/libbysirak/Desktop/Admire/src:main:resources/images/image3.jpg" alt="Profile Image" class="profile__image">
+    
+    <div class="profile__detail">
+      <i class="material-icons">person</i> 698,853 Trackers
+    </div>
+    
+   <br>
+
+
+
+    <div class="profile__average">4.10</div>
+     <div class="profile__star">
+      <p class="material-icons">star</p>
+      <p class="material-icons">star</p>
+      <p class="material-icons">star</p>
+      <p class="material-icons">star</p>
+      <p class="material-icons">star_outline</p>
+    </div>
+    <div class="profile__designation">Admirable</div>
+    <br>
+    <br>
+    <div class="profile__rating">Your Average Rating Given</div>
+
+
+     <div class="profile__star1">
+      <p class="material-icons">star</p>
+      <p class="material-icons">star</p>
+      <p class="material-icons">star</p>
+      <p class="material-icons">star_outline</p>
+      <p class="material-icons">star_outline</p>
+    </div>
+
+ <div class="profile__averagegiven">3.35</div>
+
+      <br>
+      <br>
+
+
+  </div>
+<!-- <table>
+  <caption>Recent Ratings Received</caption>
+  <tr>
+    <th>Rating</th>
+    <th>Rater</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Bill Gates</td>
+    <td>08/06/2020</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Ellen DeGeneres</td>
+    <td>08/05/2020<td>
+  </tr>
+   <tr>
+    <td>5</td>
+    <td>Oprah Winfrey</td>
+    <td>08/05/2020<td>
+  </tr>
+   <tr>
+    <td>4</td>
+    <td>Tom Hanks</td>
+    <td>08/04/2020<td>
+  </tr>
+   <tr>
+    <td>5</td>
+    <td>Serena Williams</td>
+    <td>08/04/2020<td>
+  </tr>
+</table>  -->
+
+</body>
+</html>
