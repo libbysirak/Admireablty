@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+	<head>
+	    <title>Navigation Bar</title>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		    <link rel="stylesheet" href="/custom.css">
+	</head>
+
+	<body>
+		<div th:fragment="navbar">
+			<nav class="navbar fixed-top navbar-light bg-light">
+		    	<div class="container-fluid">
+		        	<div class="navbar-header">
+		            	<a class="navbar-brand" href="#" style="color: #8D5E54; font-family: Comic Sans MS, cursive, sans-serif">Admirablety</a>
+		        	</div>
+			        <div id="navbar">
+			    		<ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
+			        		<li><a class="navbarColour" href="/profile">Profile</a></li>
+			        		<li><a class="navbarColour" href="/tweets/new">Tracking</a></li>
+			        		<li><a class="navbarColour" href="/users">Search</a></li>
+			        		<li><a class="navbarColour" href="/users">Help</a></li>
+			    		</ul>
+			            <ul class="nav navbar-nav navbar-right">
+			                <li sec:authorize="isAuthenticated()"><a style="pointer-events: none; color: #8D5E54">
+			                    @<span sec:authentication="name"></span></a></li>
+			                <li sec:authorize="isAuthenticated()"><a href="../logout">Logout</a></li>
+			            </ul>
+			        </div>
+			    </div>
+			</nav>
+		</div>
+
+		<div th:replace="/fragments/styling :: bodyLinks" ></div>
+
+	</body>
+
+</html>
+
